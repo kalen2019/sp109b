@@ -2,6 +2,7 @@
 
 ```
 多人聊天
+擴充顯示當前聊天人數, 只輸入Enter退出聊天室
 ```
 
 github連結 https://github.com/cmniefei/linux-chat
