@@ -1,6 +1,6 @@
-### server.c
+## server.c
 
-## 判斷參數
+### 判斷參數
 
 ```
 int main(int arg, char *args[])
@@ -12,7 +12,7 @@ int main(int arg, char *args[])
 	}
 ```
 
-## 將第一個參數設為端口號
+### 將第一個參數設為端口號
 
 ```
 int iport = atoi(args[1]);

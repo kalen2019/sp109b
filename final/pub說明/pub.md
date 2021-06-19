@@ -1,13 +1,13 @@
-### pub.c
+## pub.c
 
-## 最多允許100個client
+### 最多允許100個client
 
 ```
 #define MAXCHAT_P 100
 int sts[MAXCHAT_P]={0};
 ```
 
-## 添加client
+### 添加client
 
 ```
 int addchatpeople(int st)
@@ -28,7 +28,7 @@ int addchatpeople(int st)
 }
 ```
 
-## 減少client
+### 減少client
 
 ```
 void deletechatpeople(int st)
@@ -45,7 +45,7 @@ void deletechatpeople(int st)
 }
 ```
 
-## 發送聊天紀錄
+### 發送聊天紀錄
 
 ```
 void sendtocharroom(char * buf,int currst) // 獲取輸入訊息與輸入訊息的client
@@ -62,7 +62,7 @@ void sendtocharroom(char * buf,int currst) // 獲取輸入訊息與輸入訊息�
 }
 ```
 
-## 創建參數port指定端口號的server端socket
+### 創建參數port指定端口號的server端socket
 
 ```
 //AF_INET是ipv4, SOCK_STREAM為訊息完整傳輸, 0默認是創建TCP socket 
@@ -70,19 +70,19 @@ int st = socket(AF_INET, SOCK_STREAM, 0);
 return st
 ```
 
-## 接收来自client socket发送来的消息
+### 接收来自client socket发送来的消息
 
 ```
 ssize_t rc = recv(st, recvbuf, sizeof(recvbuf), 0);
 ```
 
-## 接受到來自client的socket連接
+### 接受到來自client的socket連接
 
 ```
 int client_st = accept(listen_st,  (struct sockaddr *)&client_addr, &len);
 ```
 
-## epoll
+### epoll
 
 ```
 void run(int port)

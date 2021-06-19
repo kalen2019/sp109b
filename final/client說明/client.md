@@ -1,4 +1,4 @@
-###　client.c
+##　client.c
 
 ```
 if (connect(sk, (struct sockaddr*) &addr, sizeof(addr)) == -1) { // client建立連接
@@ -11,7 +11,7 @@ pthread_create(&th2, NULL, sendsocket, &sk);
 pthread_join(th1, NULL);
 ```
 
-## sendsocket
+### sendsocket
 
 ```
 memset(&str, 0, BUFSIZE);  // 初始化記憶體
