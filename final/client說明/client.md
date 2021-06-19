@@ -1,7 +1,9 @@
 ## client.c
 
+### 建立連接
+
 ```
-if (connect(sk, (struct sockaddr*) &addr, sizeof(addr)) == -1) { // client建立連接
+if (connect(sk, (struct sockaddr*) &addr, sizeof(addr)) == -1) {
     printf("connect error :%s\n", strerror(errno));
     return EXIT_FAILURE;
 }
