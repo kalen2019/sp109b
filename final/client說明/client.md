@@ -1,4 +1,4 @@
-##　client.c
+## client.c
 
 ```
 if (connect(sk, (struct sockaddr*) &addr, sizeof(addr)) == -1) { // client建立連接
