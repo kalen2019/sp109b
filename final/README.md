@@ -2,9 +2,9 @@
 
 ```
 多人聊天
-
-報告github連結 : https://github.com/cmniefei/linux-chat
 ```
+
+github連結 https://github.com/cmniefei/linux-chat
 
 ### Picture
 
