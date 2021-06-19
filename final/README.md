@@ -8,11 +8,9 @@
 
 ### Picture
 
-```
 ![picture](https://sp109b/final/picture/epoll1.png)
 ![picture](https://sp109b/final/picture/epoll2.png)
 ![picture](https://sp109b/final/picture/epoll3.png)
-```
 
 ### Epoll原理
 
