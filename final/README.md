@@ -1,3 +1,5 @@
+### github
+
 我的報告是修改自github的專案，網址為https://github.com/cmniefei/linux-chat
 
 ### 功能
@@ -11,7 +13,7 @@
 ### 操作
 
 ```
-makefile執行make命令
+makefile執行make
 執行完成後，會生成client和server
 啟動server綁定port，如Picture...
 ```
