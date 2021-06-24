@@ -1,3 +1,5 @@
+我的報告是修改自github的專案，網址為https://github.com/cmniefei/linux-chat
+
 ### 功能
 
 ```
@@ -5,8 +7,6 @@
 顯示當前聊天人數
 只輸入Enter退出聊天室
 ```
-
-github連結 https://github.com/cmniefei/linux-chat
 
 ### Picture
 
