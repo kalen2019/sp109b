@@ -13,7 +13,7 @@
 ```
 makefile執行make命令
 執行完成後，會生成client和server
-啟動server綁定port，如下圖...
+啟動server綁定port，如Picture...
 ```
 
 ### Picture
