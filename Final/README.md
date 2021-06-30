@@ -15,3 +15,5 @@ make後會產生webd的檔案。
 ![picture](https://github.com/kalen2019/sp109b/blob/master/Final/01.jpg)
 ![picture](https://github.com/kalen2019/sp109b/blob/master/Final/02.jpg)
 ![picture](https://github.com/kalen2019/sp109b/blob/master/Final/03.jpg)
+
+[程式大致理解](https://github.com/kalen2019/sp109b/blob/master/Final/%E7%A8%8B%E5%BC%8F.md)
