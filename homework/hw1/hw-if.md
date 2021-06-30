@@ -1,5 +1,7 @@
 ## 程式 ##
-(compiler(參考老師的while程式碼去修改測試出來的))[]
+* [compiler(參考老師的while程式碼去修改測試出來的)](https://github.com/kalen2019/sp109b/blob/master/homework/hw1/03-compiler/compiler.c)
+* if函式的程式碼從91行開始
+* [if.c](https://github.com/kalen2019/sp109b/blob/master/homework/hw1/03-compiler/test/if.c)
 ## compiler if部分 ##
     void IF() {
         int ifBegin = nextLabel();
