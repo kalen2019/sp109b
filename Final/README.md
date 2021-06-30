@@ -12,6 +12,6 @@ make後會產生webd的檔案。
     root      3310  2781  0 05:12 pts/0    00:00:00 grep --color=auto webd
 在背景進行執行，並透過ifconfig確認自己的ip為只為192.168.56.115，加上預設阜號為8000，透過網頁搜尋192.168.56.115:8000，就能顯示伺服器預設的網頁了。
 ## 結果
-![picture](01.JPG)
-![picture](02.JPG)
-![picture](03.JPG)
+![picture](https://github.com/kalen2019/sp109b/tree/master/Final/01.JPG)
+![picture](https://github.com/kalen2019/sp109b/tree/master/Final/02.JPG)
+![picture](https://github.com/kalen2019/sp109b/tree/master/Final/03.JPG)
