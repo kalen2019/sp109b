@@ -74,7 +74,14 @@
         printf("*p=%c x=%c\n", *p, x);
     }
     //這樣指標沒有指向x，變成指向未知
-    ** scanf.c:
+    ** scanf1.c:
+    #include <stdio.h>
+
+    int main(){
+        char x;
+        scanf("%c", &x);
+    }
+    ** scanf1bug.c:
     #include <stdio.h>
 
     int main(){

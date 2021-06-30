@@ -2,5 +2,5 @@
 
 int main(){
     char x;
-    scanf("%c", &x); //加上&才正確
+    scanf("%c", x);
 }
