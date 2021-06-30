@@ -20,5 +20,88 @@
     ./genExp.o  //執行
     gcc genEnglish.c rlib.c -o genEnglish.o //產生語句
     ./genEnglish.o //執行
+## exp ##
+    ** exp0範例1:
+    ./exp0 '3+5'
+    argv[0]=D:\kalen VS\sp\code\c\02-compiler\00-exp0\exp0.exe argv[1]=3+5
+    === EBNF Grammar ===== 
+    E=F ([+-] F)*
+    F=Number | '(' E ')'   
+    ==== parse:3+5 ========
+    t0=3
+    t1=5
+    t2=t0+t1
+    ** exp0範例2:
+    ./exp0 '3+(5-4)'
+    argv[0]=D:\kalen VS\sp\code\c\02-compiler\00-exp0\exp0.exe argv[1]=3+(5-4)
+    === EBNF Grammar =====
+    E=F ([+-] F)*
+    F=Number | '(' E ')'
+    ==== parse:3+(5-4) ========
+    t0=3
+    t1=5
+    t2=4
+    t3=t1-t2
+    t4=t0+t3
+    ** exp0hack範例:
+    ./exp0hack '3+5'
+    === EBNF Grammar =====
+    E=F ([+-] F)*
+    F=Number | '(' E ')'
+    ==== parse:3+5 ========
+    # t0=3
+    @3
+    D=A
+    @t0
+    M=D
+    # t1=5
+    @5
+    D=A
+    @t1
+    M=D
+    # t2=t0+t1
+    @t0
+    D=M
+    @t1
+    D=D+M
+    @t2
+    M=D
+    ** exp0var範例:
+    ./exp0var 'x+3-y'
+    === EBNF Grammar =====
+    E=F ([+-] F)*
+    F=Number | '(' E ')'
+    ==== parse:x+3-y ========
+    # t0=x
+    @x
+    D=M
+    @t0
+    M=D
+    # t1=3
+    @3
+    D=A
+    @t1
+    M=D
+    # t2=t0+t1
+    @t0
+    D=M
+    @t1
+    D=D+M
+    @t2
+    M=D
+    # t3=y
+    @y
+    D=M
+    @t3
+    M=D
+    # t4=t2-t3
+    @t2
+    D=M
+    @t3
+    D=D-M
+    @t4
+    M=D
+
+
 
 
