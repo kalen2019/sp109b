@@ -15,5 +15,10 @@
 * [Compiler簡介參考](http://programmermedia.org/root/%E9%99%B3%E9%8D%BE%E8%AA%A0/%E8%AA%B2%E7%A8%8B/%E7%B3%BB%E7%B5%B1%E7%A8%8B%E5%BC%8F/03-compiler/%E7%B7%A8%E8%AD%AF%E5%99%A8%E7%B0%A1%E4%BB%8B.md)  
      * [EBNF](http://programmermedia.org/root/%E9%99%B3%E9%8D%BE%E8%AA%A0/%E8%AA%B2%E7%A8%8B/%E7%B3%BB%E7%B5%B1%E7%A8%8B%E5%BC%8F/03-compiler/%E7%B7%A8%E8%AD%AF%E5%99%A8%E7%B0%A1%E4%BB%8B.md)
 * [High Level Language](http://programmermedia.org/root/%E9%99%B3%E9%8D%BE%E8%AA%A0/%E8%AA%B2%E7%A8%8B/%E7%B3%BB%E7%B5%B1%E7%A8%8B%E5%BC%8F/03-compiler/%E9%AB%98%E9%9A%8E%E8%AA%9E%E8%A8%80%E7%9A%84%E8%AA%9E%E6%B3%95.md)
-* gen (use EBNF)
-* exp
+## gen (use EBNF) ##
+    gcc genExp.c rlib.c -o genExp.o  //產生運算式
+    ./genExp.o  //執行
+    gcc genEnglish.c rlib.c -o genEnglish.o //產生語句
+    ./genEnglish.o //執行
+
+
