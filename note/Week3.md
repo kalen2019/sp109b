@@ -54,7 +54,7 @@
     22:;
     23:}
 ## pointer ##
-    **pointer1:
+    ** pointer1:
     #include <stdio.h>
 
     int main(){
@@ -64,7 +64,7 @@
         printf("*p=%c x=%c\n", *p, x);
     }
 
-    **pointer1bug:
+    ** pointer1bug:
     #include <stdio.h>
 
     int main(){
@@ -74,3 +74,66 @@
         printf("*p=%c x=%c\n", *p, x);
     }
     //這樣指標沒有指向x，變成指向未知
+    ** scanf.c:
+    #include <stdio.h>
+
+    int main(){
+        char x;
+        scanf("%c", x);
+    }
+    //沒加上&，無法指向X的位置
+## compiler ##
+    make
+    gcc -std=c99 -O0 lexer.c compiler.c main.c -o compiler
+    //輸出執行檔
+    ./compiler test/while.c   //編譯while.c
+        i = 1;
+        while (i<10) i = i + 1;
+        ========== lex ==============
+        token=i
+        token==
+        token=1
+        token=;
+        token=while
+        token=(
+        token=i
+        token=<
+        token=10
+        token=)
+        token=i
+        token==
+        token=i
+        token=+
+        token=1
+        token=;
+        ========== dump ==============
+        0:i
+        1:=
+        2:1
+        3:;
+        4:while
+        5:(
+        6:i
+        7:<
+        8:10
+        9:)
+        10:i
+        11:=
+        12:i
+        13:+
+        14:1
+        15:;
+        ============ parse =============
+        t0 = 1
+        i = t0
+        (L0)
+        t1 = i
+        t2 = 10
+        t3 = t1 < t2
+        if not T3 goto L1
+        t4 = i
+        t5 = 1
+        t6 = t4 + t5
+        i = t6
+        goto L0
+        (L1)
